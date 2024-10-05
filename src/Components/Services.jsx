@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import logo from "../assets/logo.png";
+import callerTune from "../assets/callerTune.json";
+import ads from "../assets/ads.json";
+import creative from "../assets/creative.json";
+import Lottie from 'lottie-react';
+
 
 const Services = () => {
     const [activeTab, setActiveTab] = useState(1);
@@ -9,7 +13,7 @@ const Services = () => {
         const interval = setInterval(() => {
             setOpacity(0);
             setTimeout(() => {
-                setActiveTab(prevTab => (prevTab % 3) + 1); 
+                setActiveTab(prevTab => (prevTab % 3) + 1);
                 setOpacity(1);
             }, 300);
         }, 7000);
@@ -35,9 +39,8 @@ const Services = () => {
                         setTimeout(() => setActiveTab(1), 300);
                         setOpacity(1);
                     }}
-                    className={`px-4 py-3 rounded-lg border-2 border-[#d3132e] font-semibold transition-colors delay-75 flex gap-2 items-center ${
-                        activeTab === 1 ? 'bg-[#d3132e] text-white' : 'bg-transparent text-[#d3132e] hover:bg-[#d3132e] hover:text-white'
-                    }`}
+                    className={`px-4 py-3 rounded-lg border-2 border-[#d3132e] font-semibold transition-colors delay-75 flex gap-2 items-center ${activeTab === 1 ? 'bg-[#d3132e] text-white' : 'bg-transparent text-[#d3132e] hover:bg-[#d3132e] hover:text-white'
+                        }`}
                 >
                     Caller Tune
                 </button>
@@ -48,9 +51,8 @@ const Services = () => {
                         setTimeout(() => setActiveTab(2), 300);
                         setOpacity(1);
                     }}
-                    className={`px-4 py-3 rounded-lg border-2 border-[#d3132e] font-semibold transition-colors delay-75 flex gap-2 items-center ${
-                        activeTab === 2 ? 'bg-[#d3132e] text-white' : 'bg-transparent text-[#d3132e] hover:bg-[#d3132e] hover:text-white'
-                    }`}
+                    className={`px-4 py-3 rounded-lg border-2 border-[#d3132e] font-semibold transition-colors delay-75 flex gap-2 items-center ${activeTab === 2 ? 'bg-[#d3132e] text-white' : 'bg-transparent text-[#d3132e] hover:bg-[#d3132e] hover:text-white'
+                        }`}
                 >
                     Advertisements
                 </button>
@@ -61,9 +63,8 @@ const Services = () => {
                         setTimeout(() => setActiveTab(3), 300);
                         setOpacity(1);
                     }}
-                    className={`px-4 py-3 rounded-lg border-2 border-[#d3132e] font-semibold transition-colors delay-75 flex gap-2 items-center ${
-                        activeTab === 3 ? 'bg-[#d3132e] text-white' : 'bg-transparent text-[#d3132e] hover:bg-[#d3132e] hover:text-white'
-                    }`}
+                    className={`px-4 py-3 rounded-lg border-2 border-[#d3132e] font-semibold transition-colors delay-75 flex gap-2 items-center ${activeTab === 3 ? 'bg-[#d3132e] text-white' : 'bg-transparent text-[#d3132e] hover:bg-[#d3132e] hover:text-white'
+                        }`}
                 >
                     Creative Solutions
                 </button>
@@ -86,7 +87,7 @@ const Services = () => {
                         </div>
 
                         <div className="flex-1 flex justify-center">
-                            <img className='w-[80%]' src={logo} alt="" />
+                            <Lottie animationData={callerTune} />
                         </div>
                     </div>
                 )}
@@ -104,7 +105,7 @@ const Services = () => {
                         </div>
 
                         <div className="flex-1 flex justify-center">
-                            <img className='w-[80%]' src={logo} alt="" />
+                            <Lottie animationData={ads} />
                         </div>
                     </div>
                 )}
@@ -122,7 +123,7 @@ const Services = () => {
                         </div>
 
                         <div className="flex-1 flex justify-center">
-                            <img className='w-[80%]' src={logo} alt="" />
+                            <Lottie animationData={creative} />
                         </div>
                     </div>
                 )}
