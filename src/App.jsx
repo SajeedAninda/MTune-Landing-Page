@@ -1,3 +1,4 @@
+import AboutUs from "./Components/AboutUs"
 import Hero from "./Components/Hero"
 import Navbar from "./Components/Navbar"
 
@@ -7,6 +8,7 @@ function App() {
     <>
       <Navbar></Navbar>
       <Hero></Hero>
+      <AboutUs></AboutUs>
     </>
   )
 }
