@@ -1,6 +1,7 @@
 import AboutUs from "./Components/AboutUs"
 import Contact from "./Components/Contact"
 import FAQs from "./Components/FAQs"
+import Footer from "./Components/Footer"
 import Hero from "./Components/Hero"
 import Navbar from "./Components/Navbar"
 import Services from "./Components/Services"
@@ -15,6 +16,7 @@ function App() {
       <Services></Services>
       <FAQs></FAQs>
       <Contact></Contact>
+      <Footer></Footer>
     </>
   )
 }
