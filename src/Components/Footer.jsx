@@ -16,16 +16,16 @@ const Footer = () => {
                         <h3 class="text-3xl font-bold mb-3"> Thank you for visiting our site!</h3>
                         <p> Stay in Touch. </p>
                         <div class="flex justify-center items-center gap-6 my-10">
-                            <a href='https://www.facebook.com/mt.callertune' target='_blank' className='px-4 py-3 rounded-lg bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#d3132e] font-semibold transition-colors delay-75 flex gap-2 items-center '>
-                                <FaFacebook className='text-[22px]' />
+                            <a href='https://www.facebook.com/mt.callertune' target='_blank' className='px-3 md:px-4 py-2 md:py-3 rounded-lg bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#d3132e] font-semibold transition-colors delay-75 flex gap-2 items-center '>
+                                <FaFacebook className='text-[18px] md:text-[24px]' />
                                 MTune
                             </a>
 
                             <a
                                 href='tel:+8801575782959'
-                                className='px-4 py-3 rounded-lg bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#d3132e] font-semibold transition-colors delay-75 flex gap-2 items-center '
+                                className='px-3 md:px-4 py-2 md:py-3 rounded-lg bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#d3132e] font-semibold transition-colors delay-75 flex gap-2 items-center '
                             >
-                                <MdAddCall className='text-[24px]' />
+                                <MdAddCall className='text-[18px] md:text-[24px]' />
                                 Call
                             </a>
 
@@ -33,9 +33,9 @@ const Footer = () => {
                                 href='https://wa.me/+8801575782959'
                                 target='_blank'
                                 rel='noopener noreferrer'
-                                className='px-4 py-3 rounded-lg bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#d3132e] font-semibold transition-colors delay-75 flex gap-2 items-center '
+                                className='px-3 md:px-4 py-2 md:py-3 rounded-lg bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#d3132e] font-semibold transition-colors delay-75 flex gap-2 items-center '
                             >
-                                <RiWhatsappFill className='text-[24px]' />
+                                <RiWhatsappFill className='text-[18px] md:text-[24px]' />
                                 WhatsApp
                             </a>
                         </div>
