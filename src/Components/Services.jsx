@@ -22,7 +22,7 @@ const Services = () => {
     }, []);
 
     return (
-        <div className='h-[100vh] w-[80%] mx-auto'>
+        <div className='h-fit lg:h-[100vh] w-[80%] mx-auto'>
             <div className='mt-6'>
                 <h1 className='text-[40px] text-[#d3132e] font-bold text-center'>
                     Our Services
@@ -39,7 +39,7 @@ const Services = () => {
                         setTimeout(() => setActiveTab(1), 300);
                         setOpacity(1);
                     }}
-                    className={`px-4 py-3 rounded-lg border-2 border-[#d3132e] font-semibold transition-colors delay-75 flex gap-2 items-center ${activeTab === 1 ? 'bg-[#d3132e] text-white' : 'bg-transparent text-[#d3132e] hover:bg-[#d3132e] hover:text-white'
+                    className={`px-3 lg:px-4 py-2 lg:py-3 rounded-lg border-2 border-[#d3132e] font-semibold transition-colors delay-75 flex gap-2 items-center ${activeTab === 1 ? 'bg-[#d3132e] text-white' : 'bg-transparent text-[#d3132e] hover:bg-[#d3132e] hover:text-white'
                         }`}
                 >
                     Caller Tune
@@ -51,7 +51,7 @@ const Services = () => {
                         setTimeout(() => setActiveTab(2), 300);
                         setOpacity(1);
                     }}
-                    className={`px-4 py-3 rounded-lg border-2 border-[#d3132e] font-semibold transition-colors delay-75 flex gap-2 items-center ${activeTab === 2 ? 'bg-[#d3132e] text-white' : 'bg-transparent text-[#d3132e] hover:bg-[#d3132e] hover:text-white'
+                    className={`px-3 lg:px-4 py-2 lg:py-3 rounded-lg border-2 border-[#d3132e] font-semibold transition-colors delay-75 flex gap-2 items-center ${activeTab === 2 ? 'bg-[#d3132e] text-white' : 'bg-transparent text-[#d3132e] hover:bg-[#d3132e] hover:text-white'
                         }`}
                 >
                     Advertisements
@@ -63,7 +63,7 @@ const Services = () => {
                         setTimeout(() => setActiveTab(3), 300);
                         setOpacity(1);
                     }}
-                    className={`px-4 py-3 rounded-lg border-2 border-[#d3132e] font-semibold transition-colors delay-75 flex gap-2 items-center ${activeTab === 3 ? 'bg-[#d3132e] text-white' : 'bg-transparent text-[#d3132e] hover:bg-[#d3132e] hover:text-white'
+                    className={`px-3 lg:px-4 py-2 lg:py-3 rounded-lg border-2 border-[#d3132e] font-semibold transition-colors delay-75 flex gap-2 items-center ${activeTab === 3 ? 'bg-[#d3132e] text-white' : 'bg-transparent text-[#d3132e] hover:bg-[#d3132e] hover:text-white'
                         }`}
                 >
                     Creative Solutions
@@ -75,7 +75,7 @@ const Services = () => {
                 style={{ opacity }}
             >
                 {activeTab === 1 && (
-                    <div className='tab-1 flex justify-between items-center pt-8'>
+                    <div className='tab-1 flex flex-col lg:flex-row justify-between items-center pt-8'>
                         <div className="flex-1">
                             <p className='text-[32px] text-[#d3132e] font-semibold mt-2 text-left'>
                                 Caller Tune Services
@@ -86,14 +86,14 @@ const Services = () => {
                             </p>
                         </div>
 
-                        <div className="flex-1 flex justify-center">
+                        <div className="flex-1 flex  justify-center">
                             <Lottie animationData={callerTune} />
                         </div>
                     </div>
                 )}
 
                 {activeTab === 2 && (
-                    <div className='tab-2 flex justify-between items-center pt-8'>
+                    <div className='tab-2 flex flex-col lg:flex-row justify-between items-center pt-8'>
                         <div className="flex-1">
                             <p className='text-[32px] text-[#d3132e] font-semibold mt-2 text-left'>
                                 Voiceovers & Advertisements
@@ -111,7 +111,7 @@ const Services = () => {
                 )}
 
                 {activeTab === 3 && (
-                    <div className='tab-3 flex justify-between items-center pt-8'>
+                    <div className='tab-3 flex flex-col lg:flex-row justify-between items-center pt-8'>
                         <div className="flex-1">
                             <p className='text-[32px] text-[#d3132e] font-semibold mt-2 text-left'>
                                 Creative Multimedia Solutions
