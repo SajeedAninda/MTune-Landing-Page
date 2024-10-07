@@ -4,7 +4,7 @@ import logo from "../assets/logo.png"
 const AboutUs = () => {
     return (
         <div className='h-fit lg:h-screen w-[80%] mx-auto'>
-            <div className='mt-12'>
+            <div className='mt-6'>
                 <h1 className='text-[40px] text-[#d3132e] font-bold text-center'>
                     About Us
                 </h1>
