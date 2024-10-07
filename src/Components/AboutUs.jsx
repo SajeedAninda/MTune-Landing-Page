@@ -3,7 +3,7 @@ import logo from "../assets/logo.png"
 
 const AboutUs = () => {
     return (
-        <div className='h-screen w-[80%] mx-auto'>
+        <div className='h-fit lg:h-screen w-[80%] mx-auto'>
             <div className='mt-12'>
                 <h1 className='text-[40px] text-[#d3132e] font-bold text-center'>
                     About Us
@@ -13,13 +13,13 @@ const AboutUs = () => {
                 </p>
             </div>
 
-            <div className='flex justify-between items-center pt-8'>
+            <div className='flex flex-col lg:flex-row justify-between items-center pt-8'>
                 <div className="flex-1">
-                    <p className='text-[32px] text-[#d3132e] font-semibold mt-2 text-left'>
+                    <p className='text-[32px] text-[#d3132e] font-semibold mt-2 text-center lg:text-left'>
                         What is MTune?
                     </p>
 
-                    <p className='text-[22px] text-[#252b46] font-medium mt-2 text-left'>
+                    <p className='text-[22px] text-[#252b46] font-medium mt-2 text-center lg:text-left'>
                         MTune is a premier audio branding service dedicated to transforming the way businesses communicate with their customers. We specialize in customized caller tune services for businesses, along with professional voiceovers and jingles for campaigns, TV ads, and online promotions. We also offer IVR systems, logo animations, Facebook cover videos, and company profiles to enhance your brand's presence.
                     </p>
                 </div>
