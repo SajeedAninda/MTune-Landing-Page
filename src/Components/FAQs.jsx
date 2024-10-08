@@ -3,14 +3,14 @@ import "./faq.css";
 
 const FAQs = () => {
     return (
-        <div className="mt-12">
+        <div className="pt-12 dark:bg-slate-900">
             <section className="w-[80%] mx-auto  overflow-hidden mt-20" id="faq">
                 <div className="">
                     <div className="relative py-16 bg-yelloww overflow-hidden rounded-3xl">
                         <div className="relative z-10 md:max-w-7xl mx-auto">
-                            <div className="md:max-w-xl mb-10"><span className="inline-block mb-5 text-md text-[#252b46] font-bold uppercase tracking-widest">Frequently
+                            <div className="md:max-w-xl mb-10"><span className="inline-block mb-5 text-md text-[#252b46] dark:text-white font-bold uppercase tracking-widest">Frequently
                                 asked questions</span>
-                                <h2 className="font-heading text-[#252b46] text-4xl lg:text-5xl font-bold font-heading">
+                                <h2 className="font-heading text-[#252b46] dark:text-white text-4xl lg:text-5xl font-bold font-heading">
                                     Got questions? We’re here to help!</h2>
                             </div>
                             <div className="flex flex-wrap -m-3">

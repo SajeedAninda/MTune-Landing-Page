@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import logo from "../assets/logo.png";
 import { FaFacebook } from "react-icons/fa";
 import { HiOutlineMenu } from 'react-icons/hi';
-import { IoClose } from 'react-icons/io5'; // For close icon
+import { IoClose } from 'react-icons/io5';
 import { BsFillMoonStarsFill } from 'react-icons/bs';
 
 const Navbar = () => {

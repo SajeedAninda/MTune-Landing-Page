@@ -3,18 +3,18 @@ import React from "react";
 const Contact = () => {
   return (
     <>
-      <section className="relative z-10 overflow-hidden bg-white py-12 dark:bg-dark lg:py-[120px]">
+      <section className="relative z-10 overflow-hidden bg-white dark:bg-slate-900 py-12 dark:bg-dark lg:py-[120px]">
         <div className="w-[80%] mx-auto">
           <div className="-mx-4 flex flex-wrap lg:justify-between">
             <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
               <div className="mb-12 max-w-[570px] lg:mb-0">
-                <span className="block mb-4 text-[#252b46] text-4xl lg:text-5xl font-bold">
+                <span className="block mb-4 text-[#252b46] dark:text-white text-4xl lg:text-5xl font-bold">
                   Contact Us
                 </span>
                 <h2 className="mb-6 text-[28px] font-semibold uppercase text-[#d3132e] sm:text-[40px] lg:text-[36px] xl:text-[40px]">
                   GET IN TOUCH WITH US
                 </h2>
-                <p className="mb-9 text-[22px] leading-relaxed text-[#252b46] dark:text-dark-6">
+                <p className="mb-9 text-[22px] leading-relaxed text-[#252b46] dark:text-white dark:text-dark-6">
                 Have questions or need assistance? Our team is here to help. Contact us today for prompt and friendly support!
                 </p>
                 <div className="mb-8 flex w-full max-w-[370px]">
@@ -36,7 +36,7 @@ const Contact = () => {
                     <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
                       Our Location
                     </h4>
-                    <p className="text-[20px] font-semibold text-[#252b46] text-body-color dark:text-dark-6 ">
+                    <p className="text-[20px] font-semibold text-[#252b46] dark:text-white text-body-color dark:text-dark-6 ">
                     Suit#A-1/2 Shatabdi Centre (18th Floor) 292, Inner Circular Road, Fakirapool
                     </p>
                   </div>
@@ -76,7 +76,7 @@ const Contact = () => {
                     <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
                       Phone Number
                     </h4>
-                    <p className="text-[20px] font-semibold text-[#252b46] text-body-color dark:text-dark-6 ">
+                    <p className="text-[20px] font-semibold text-[#252b46] dark:text-white text-body-color dark:text-dark-6 ">
                     <a href="tel:01575-782959">01575-782959</a>
                     </p>
                   </div>
@@ -101,7 +101,7 @@ const Contact = () => {
                     <h4 className="mb-1 text-xl font-bold text-dark dark:text-white">
                       Email Address
                     </h4>
-                    <p className="text-[20px] font-semibold text-[#252b46] text-body-color dark:text-dark-6 ">
+                    <p className="text-[20px] font-semibold text-[#252b46] dark:text-white text-body-color dark:text-dark-6 ">
                       <a href="mailto:sajaninda@gmail.com">sajaninda@gmail.com</a>
                     </p>
                   </div>
@@ -109,7 +109,7 @@ const Contact = () => {
               </div>
             </div>
             <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
-              <div className="relative rounded-lg bg-white p-8 shadow-lg dark:bg-dark-2 sm:p-12">
+              <div className="relative rounded-lg bg-white dark:bg-slate-700 p-8 shadow-lg dark:bg-dark-2 sm:p-12">
                 <form>
                   <ContactInputBox
                     type="text"
@@ -968,7 +968,7 @@ const ContactTextArea = ({ row, placeholder, name, defaultValue }) => {
           rows={row}
           placeholder={placeholder}
           name={name}
-          className="w-full resize-none rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
+          className="w-full resize-none rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-slate-800"
           defaultValue={defaultValue}
         />
       </div>
@@ -984,7 +984,7 @@ const ContactInputBox = ({ type, placeholder, name }) => {
           type={type}
           placeholder={placeholder}
           name={name}
-          className="w-full rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-dark-6"
+          className="w-full rounded border border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-slate-800"
         />
       </div>
     </>
