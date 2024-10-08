@@ -49,9 +49,9 @@ const Navbar = () => {
                                 MTune
                             </a>
 
-                            <div className='flex items-center gap-4'>
+                            <div className='items-center gap-4 hidden lg:flex'>
                                 <button
-                                    className='themeSwitcher w-[40px] h-[20px] rounded-2xl bg-[#979797] dark:bg-[#A445ed] flex items-center px-[0.15rem] cursor-pointer hover:bg-[#A445ed] transition-colors delay-50'
+                                    className='themeSwitcher w-[40px] h-[20px] rounded-2xl bg-[#f58592] dark:bg-[#d3132e] flex items-center px-[0.15rem] cursor-pointer hover:bg-[#d3132e] transition-colors delay-50'
                                     onClick={handleToggle}
                                 >
                                     <div
@@ -78,6 +78,21 @@ const Navbar = () => {
                     <li className='hover:text-[#d3132e] cursor-pointer transition-colors'>Pricing</li>
                     <li className='hover:text-[#d3132e] cursor-pointer transition-colors'>Contact</li>
                 </ul>
+
+                <div className='p-4 gap-4 flex items-center mt-5'>
+                    <button
+                        className='themeSwitcher w-[80px] h-[40px] rounded-3xl bg-[#f58592] dark:bg-[#d3132e] flex items-center px-[0.15rem] cursor-pointer hover:bg-[#d3132e] transition-colors delay-50'
+                        onClick={handleToggle}
+                    >
+                        <div
+                            className={`w-[35px] h-[35px] bg-[#f4f4f4] rounded-full transition-transform duration-300 ${isDarkMode ? 'translate-x-[2.4rem]' : 'translate-x-0'}`}
+                        ></div>
+                    </button>
+
+                    <div>
+                        <BsFillMoonStarsFill className='text-[35px]'/>
+                    </div>
+                </div>
             </div>
 
             {sidebarOpen && (
