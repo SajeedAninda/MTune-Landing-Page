@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import logo from "../assets/logo.png";
 import { FaFacebook } from "react-icons/fa";
 import { HiOutlineMenu } from 'react-icons/hi';
 import { IoClose } from 'react-icons/io5'; // For close icon
+import { BsFillMoonStarsFill } from 'react-icons/bs';
 
 const Navbar = () => {
     const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -11,9 +12,23 @@ const Navbar = () => {
         setSidebarOpen(!sidebarOpen);
     };
 
+    const [isDarkMode, setIsDarkMode] = useState(false);
+
+    useEffect(() => {
+        if (isDarkMode) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+    }, [isDarkMode]);
+
+    const handleToggle = () => {
+        setIsDarkMode(!isDarkMode);
+    };
+
     return (
         <div className='relative'>
-            <div className='h-[15vh] lg:h-[13vh] bg-gradient-to-r from-white to-[#d3132e] shadow-md flex items-center'>
+            <div className='h-[15vh] lg:h-[13vh] bg-gradient-to-r from-white to-[#d3132e] dark:bg-gradient-to-l dark:from-black dark:to-[#d3132e]  shadow-md flex items-center'>
                 <div className='w-[90%] md:w-[85%] mx-auto flex justify-between items-center'>
                     <div className='flex gap-2 items-center'>
                         <div className='block md:hidden'>
@@ -33,6 +48,21 @@ const Navbar = () => {
                                 <FaFacebook className='text-[22px]' />
                                 MTune
                             </a>
+
+                            <div className='flex items-center gap-4'>
+                                <button
+                                    className='themeSwitcher w-[40px] h-[20px] rounded-2xl bg-[#979797] dark:bg-[#A445ed] flex items-center px-[0.15rem] cursor-pointer hover:bg-[#A445ed] transition-colors delay-50'
+                                    onClick={handleToggle}
+                                >
+                                    <div
+                                        className={`w-[14px] h-[14px] bg-[#f4f4f4] rounded-full transition-transform duration-300 ${isDarkMode ? 'translate-x-[1.2rem]' : 'translate-x-0'}`}
+                                    ></div>
+                                </button>
+
+                                <div>
+                                    <BsFillMoonStarsFill />
+                                </div>
+                            </div>
                         </ul>
                     </div>
                 </div>
