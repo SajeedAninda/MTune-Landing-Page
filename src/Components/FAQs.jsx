@@ -36,7 +36,7 @@ const FAQs = () => {
                                                 </h3>
                                             </div>
                                             <div className="w-full md:w-1/2 p-2">
-                                                <p className="text-white font-medium">For just 1500 BDT, you can get a lifetime caller tune that speaks for your business. One-time payment, no recurring fees – a smart and affordable investment to keep your business message ringing every time someone calls.
+                                                <p className="text-white font-medium">For just 999 BDT, you can get a lifetime caller tune that speaks for your business. One-time payment, no recurring fees – a smart and affordable investment to keep your business message ringing every time someone calls.
                                                 </p>
                                             </div>
                                         </div>
